@@ -161,10 +161,9 @@ app.controller('crossController', function($scope){
 
 
       inChart.width(900)
-        .height(100)
-        .margins({top: 10, right: 10, bottom: 20, left: 40})
+        .height(200)
+        .margins({top: 10, right: 10, bottom: 20, left: 50})
         .dimension(timeDimension)
-        .renderArea(true)
         .group(inGroup)
         .transitionDuration(500)
         .brushOn(false) 
@@ -173,10 +172,9 @@ app.controller('crossController', function($scope){
         .xAxis();
 
         outChart.width(900)
-        .height(100)
-        .margins({top: 10, right: 10, bottom: 20, left: 40})
+        .height(200)
+        .margins({top: 10, right: 10, bottom: 20, left: 50})
         .dimension(timeDimension)
-        .renderArea(true)
         .group(outGroup)
         .transitionDuration(500)
         .brushOn(false) 
@@ -185,8 +183,8 @@ app.controller('crossController', function($scope){
         .xAxis();
 
       differenceChart.width(900)
-        .height(100)
-        .margins({top: 10, right: 10, bottom: 20, left: 40})
+        .height(200)
+        .margins({top: 10, right: 10, bottom: 20, left: 50})
         .dimension(timeDimension)
         .renderArea(true)
         .group(difGroup)
@@ -242,8 +240,8 @@ app.controller('sankeyController', function($scope) {
         LEFT: OUTER_MARGIN
       },
       TRANSITION_DURATION = 400,
-      HEIGHT = 500 - MARGIN.TOP - MARGIN.BOTTOM,
-      WIDTH = 960 - MARGIN.LEFT - MARGIN.RIGHT,
+      HEIGHT = 400 - MARGIN.TOP - MARGIN.BOTTOM,
+      WIDTH = 660 - MARGIN.LEFT - MARGIN.RIGHT,
       LAYOUT_INTERATIONS = 32,
       REFRESH_INTERVAL = 7000;
 
